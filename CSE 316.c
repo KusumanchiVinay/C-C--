@@ -72,7 +72,7 @@ int main(int argc, char** argv) {
                 for(int j=0; j<nResources; j++)
                         need[i][j] = maxRequired[i][j] - allocated[i][j];
 
-	// get safe sequence
+	
 	safeSeq = (int *)malloc(nProcesses * sizeof(*safeSeq));
         for(int i=0; i<nProcesses; i++) safeSeq[i] = -1;
 
